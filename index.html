@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patternwise — a calm, private health journal</title>
+<meta name="description" content="Track migraine, reflux, sleep, food and more — together — and notice your own patterns. Private by design: everything stays on your phone.">
+<style>
+  :root{
+    --bg:#f4f7f5; --surface:#ffffff; --ink:#171a1d; --muted:#5f6a72; --faint:#8b959c;
+    --accent:#3a7d5d; --accent-tint:#e7f0ea; --border:#e2e8e4; --shadow:0 24px 60px rgba(20,40,30,.14);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  a{color:var(--accent)}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+  header.top{display:flex;align-items:center;gap:10px;padding:26px 0}
+  .mark{width:34px;height:34px;border-radius:10px;background:var(--accent-tint);display:grid;place-items:center;font-size:18px}
+  .brand{font-weight:700;font-size:19px}
+  header.top nav{margin-left:auto;display:flex;gap:20px;font-weight:600;font-size:15px}
+  header.top nav a{text-decoration:none;color:var(--muted)}
+  header.top nav a:hover{color:var(--accent)}
+
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:36px 0 20px}
+  .hero h1{font-size:42px;line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+  .hero p.lede{font-size:19px;color:var(--muted);margin:0 0 24px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 20px;border-radius:12px;font-weight:600;text-decoration:none}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--border)}
+  .note{margin-top:20px;font-size:14px;color:var(--faint)}
+  .phone{justify-self:center}
+  .phone img{width:280px;max-width:100%;border-radius:34px;box-shadow:var(--shadow);border:1px solid var(--border);display:block}
+
+  section.features{padding:40px 0}
+  .features h2{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 20px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0;color:var(--muted);font-size:14.5px}
+
+  section.shots{padding:20px 0 48px}
+  .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .strip figure{margin:0}
+  .strip img{width:100%;border-radius:22px;box-shadow:var(--shadow);border:1px solid var(--border);display:block}
+  .strip figcaption{margin-top:10px;color:var(--muted);font-size:14px;text-align:center}
+
+  .disclaimer{background:var(--accent-tint);border-radius:16px;padding:18px 20px;color:#2c5c45;font-size:14.5px;margin:8px 0 40px}
+  footer{border-top:1px solid var(--border);padding:26px 0 60px;color:var(--faint);font-size:14px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--muted);text-decoration:none}
+  footer .sp{margin-left:auto}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;text-align:center}
+    .hero .cta{justify-content:center}
+    .phone{order:-1}
+    .grid,.strip{grid-template-columns:1fr}
+    .hero h1{font-size:34px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="mark">≈</div>
+    <div class="brand">Patternwise</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="./support.html">Support</a>
+      <a href="./privacy-policy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Notice your own health patterns.</h1>
+      <p class="lede">A calm, private journal for migraine, reflux, sleep, food and the weather around you — tracked <em>together</em>, so you can see how they line up over time.</p>
+      <div class="cta">
+        <a class="btn primary" href="./support.html">Get support</a>
+        <a class="btn ghost" href="./privacy-policy.html">Privacy policy</a>
+      </div>
+      <p class="note">No account · nothing leaves your phone · no ads.</p>
+    </div>
+    <div class="phone">
+      <img src="./images/today.png" alt="Patternwise Today screen showing a gentle greeting, condition tiles and the day's log.">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Patternwise</h2>
+    <div class="grid">
+      <div class="card"><h3>Several conditions, together</h3><p>Most trackers follow one thing. Patternwise holds migraine, reflux and your own conditions side by side — so cross-connections can surface.</p></div>
+      <div class="card"><h3>Logged in seconds</h3><p>Pick what and how intense — done. Food, sleep, stress and custom factors take a tap. Auto-capture handles weather and last night's sleep.</p></div>
+      <div class="card"><h3>Private by design</h3><p>Everything is stored encrypted on your device. There's no account and no server. Optional AI summaries run entirely on-device.</p></div>
+      <div class="card"><h3>Gentle, honest insights</h3><p>A calendar and frequency view, plus a look-back at what you logged around an entry — for context, never as a cause. No predictions.</p></div>
+      <div class="card"><h3>For you, or someone you care for</h3><p>Keep separate private profiles for more than one person on the same phone.</p></div>
+      <div class="card"><h3>Yours to keep</h3><p>Export a clean CSV or a tidy PDF summary to keep, or to share with your doctor.</p></div>
+    </div>
+  </section>
+
+  <section class="shots">
+    <div class="strip">
+      <figure><img src="./images/insights.png" alt="Insights calendar highlighting days with a logged symptom."><figcaption>See your patterns over time</figcaption></figure>
+      <figure><img src="./images/lookback.png" alt="Look-back timeline of everything logged around a migraine."><figcaption>Context around each entry</figcaption></figure>
+      <figure><img src="./images/export.png" alt="Export screen offering a PDF summary or CSV."><figcaption>Export for your doctor</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    Patternwise is a wellness journal, not a medical device. It does not diagnose, treat, or predict any condition. For anything health-related, talk with your doctor.
+  </div>
+
+  <footer>
+    <span>© 2026 Patternwise</span>
+    <a href="./support.html">Support</a>
+    <a href="./privacy-policy.html">Privacy</a>
+    <a class="sp" href="mailto:support.patternwise@gmail.com">support.patternwise@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>

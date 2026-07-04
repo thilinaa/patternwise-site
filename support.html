@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patternwise — Support</title>
+<meta name="description" content="Help and answers for Patternwise, a calm, private health journal. No account, everything on-device.">
+<style>
+  :root{--bg:#f4f7f5;--surface:#ffffff;--ink:#171a1d;--muted:#5f6a72;--faint:#8b959c;--accent:#3a7d5d;--accent-tint:#e7f0ea;--border:#e2e8e4}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  a{color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  header.top{display:flex;align-items:center;gap:10px;padding:24px 0}
+  .mark{width:32px;height:32px;border-radius:9px;background:var(--accent-tint);display:grid;place-items:center;font-size:17px}
+  .brand{font-weight:700;font-size:18px}
+  .brand a{text-decoration:none;color:inherit}
+  header.top nav{margin-left:auto;display:flex;gap:18px;font-weight:600;font-size:15px}
+  header.top nav a{text-decoration:none;color:var(--muted)}
+  h1{font-size:32px;margin:20px 0 8px;letter-spacing:-.01em}
+  .lede{color:var(--muted);font-size:18px;margin:0 0 8px}
+  h2{font-size:20px;margin:34px 0 10px}
+  .contact{background:var(--accent-tint);border-radius:16px;padding:18px 20px;margin:18px 0}
+  .contact a{font-weight:600}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin:6px 0}
+  .feat div{color:var(--muted);font-size:15px}
+  details{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:2px 18px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+";color:var(--accent);font-weight:700;margin-right:10px}
+  details[open] summary::before{content:"–"}
+  details .body{color:var(--muted);padding:0 0 14px}
+  footer{border-top:1px solid var(--border);margin-top:40px;padding:24px 0 60px;color:var(--faint);font-size:14px;display:flex;gap:16px;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="mark">≈</div><div class="brand"><a href="./">Patternwise</a></div>
+    <nav><a href="./support.html">Support</a><a href="./privacy-policy.html">Privacy</a></nav>
+  </header>
+
+  <h1>Support</h1>
+  <p class="lede">Patternwise is a calm, private journal for noticing your own health patterns — migraine, reflux, sleep, food and the weather around you, tracked together on your phone.</p>
+
+  <div class="contact">
+    Need help, found a bug, or have an idea? Email <a href="mailto:support.patternwise@gmail.com">support.patternwise@gmail.com</a>. We read every message and usually reply within a couple of days.
+  </div>
+
+  <h2>What Patternwise does</h2>
+  <div class="feat">
+    <div>• Log symptoms in seconds, with optional detail</div>
+    <div>• Track food, drinks &amp; lifestyle factors</div>
+    <div>• Track several conditions together</div>
+    <div>• Separate private profiles per person</div>
+    <div>• Calendar &amp; frequency insights</div>
+    <div>• Look-back: context around each entry</div>
+    <div>• Auto-capture weather, pressure &amp; sleep</div>
+    <div>• Export a CSV or PDF for your doctor</div>
+  </div>
+
+  <h2>Frequently asked</h2>
+
+  <details><summary>Do I need an account?</summary><div class="body">No. Patternwise has no account and no sign-in. You just open the app and start. Everything stays on your device.</div></details>
+
+  <details><summary>Where is my data stored? Is it private?</summary><div class="body">In an encrypted database on your phone. Nothing is uploaded to a server — there is no server. There are no ads and no trackers. See the <a href="./privacy-policy.html">Privacy Policy</a> for details.</div></details>
+
+  <details><summary>How do I log something quickly?</summary><div class="body">On the Today screen, tap Symptom, Food, or Lifestyle, pick what and how intense, and save. You can also type a sentence like "bad headache after late coffee" into the quick box and confirm the entries it suggests.</div></details>
+
+  <details><summary>How do I edit or delete an entry?</summary><div class="body">Open History (or "See all" on Today) and press and hold any entry to edit or delete it.</div></details>
+
+  <details><summary>How do I export my data?</summary><div class="body">Settings → Export data. Choose a person, what to include, and a date range, then create a CSV (a spreadsheet of everything) or a PDF summary to keep or share with a clinician.</div></details>
+
+  <details><summary>Can I track more than one person?</summary><div class="body">Yes. Add profiles in Settings → People, and switch between them from the avatar on the Today screen. Each person keeps their own conditions, logs, and insights, privately.</div></details>
+
+  <details><summary>What are the "AI features"? Are they private?</summary><div class="body">Optional summaries (a recap of your logs, and a neutral doctor's-export summary) run entirely on your device using Apple Intelligence. Nothing is sent to a server. They require a device with Apple Intelligence enabled; without it, everything else in the app still works.</div></details>
+
+  <details><summary>Does it use my location?</summary><div class="body">Only if you enable weather. It then sends a coarse, approximate area (not your exact location) to a weather service to fetch local conditions and pressure, and keeps nothing. You can leave weather off.</div></details>
+
+  <details><summary>Does it read Apple Health?</summary><div class="body">Only with your permission, and only to read (for example) last night's sleep so you don't have to type it. Patternwise never writes to Apple Health.</div></details>
+
+  <details><summary>Is my data backed up? What if I delete the app?</summary><div class="body">In this version, data lives only on your device — there is no cloud backup, which is what keeps it fully private. Deleting the app erases its data. To move to a new phone, export a CSV first. (Optional encrypted sync is planned for a future version.)</div></details>
+
+  <details><summary>Does it work offline?</summary><div class="body">Yes. Everything except the optional weather lookup works with no connection.</div></details>
+
+  <details><summary>Is Patternwise a medical app?</summary><div class="body">No. Patternwise is a wellness journal. It does not diagnose, treat, or predict any condition, and it is not a medical device. For anything health-related, talk with your doctor.</div></details>
+
+  <details><summary>How much does it cost?</summary><div class="body">Patternwise is free. If optional paid features are added later, they will be clearly marked and you'll be able to choose.</div></details>
+
+  <details><summary>How do I report a bug or request a feature?</summary><div class="body">Email <a href="mailto:support.patternwise@gmail.com">support.patternwise@gmail.com</a> with what happened (and your iPhone model / iOS version if it's a bug). It really helps.</div></details>
+
+  <footer>
+    <span>© 2026 Patternwise</span>
+    <a href="./">Home</a>
+    <a href="./privacy-policy.html">Privacy</a>
+  </footer>
+
+</div>
+</body>
+</html>
