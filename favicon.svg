@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Patternwise favicon — "The Weave" on the Night tile. Strokes use the small-size ramp
+       from design/logo/canvas/AppIcon.dc.html (12 / 19), since a favicon renders at 16-32px. -->
+  <defs><clipPath id="c"><rect x="19" y="10" width="20" height="76"/></clipPath></defs>
+  <rect width="96" height="96" fill="#14161A"/>
+  <g fill="none">
+    <path d="M 10 33 C 24 33 34 63 48 63 C 62 63 72 33 86 33" stroke="#8FB89B" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 10 63 C 24 63 34 33 48 33 C 62 33 72 63 86 63" stroke="#14161A" stroke-width="19" stroke-linecap="round"/>
+    <path d="M 10 63 C 24 63 34 33 48 33 C 62 33 72 63 86 63" stroke="#8A929B" stroke-width="12" stroke-linecap="round"/>
+    <g clip-path="url(#c)">
+      <path d="M 10 33 C 24 33 34 63 48 63 C 62 63 72 33 86 33" stroke="#14161A" stroke-width="19"/>
+      <path d="M 10 33 C 24 33 34 63 48 63 C 62 63 72 33 86 33" stroke="#8FB89B" stroke-width="12"/>
+    </g>
+  </g>
+</svg>
